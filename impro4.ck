@@ -2,7 +2,7 @@ adc => Gain g => blackhole;
 
 SawOsc s => JCRev j => Gain gg => dac;
 
-2260 => s.freq;
+760 => s.freq;
 
 function void in()
 {
@@ -20,7 +20,7 @@ function void re()
 {
 while(1)
 {
-g.last() * 0.6 => gg.gain;
+g.last() * 1.0 => gg.gain;
 1::samp => now;
 }
 }
