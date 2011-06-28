@@ -20,7 +20,7 @@ function void re()
 {
 while(1)
 {
-1 - (g.last() * 0.8) => gg.gain;
+g.last() * 0.8 => gg.gain;
 1::samp => now;
 }
 }
