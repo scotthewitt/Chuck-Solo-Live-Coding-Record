@@ -1,6 +1,18 @@
-Noise n => dac;
-n => JCRev j => dac;
+Noise n => Gain g => dac;
+g => JCRev j => dac;
 
+function void gater()
+{
+while(1)
+{
+ 0.0 => g.gain;
+25::ms => now;
+0.9 => g.gain;
+25::ms => now;
+}
+}
+
+spork ~ gater();
 
 while(1)
 {
