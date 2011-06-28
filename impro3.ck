@@ -14,7 +14,7 @@ while(1)
 250::ms => now;
 }
 }
-spork ~ in();
+//spork ~ in();
 
 function void re()
 {
