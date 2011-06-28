@@ -2,7 +2,7 @@ adc => Gain g => blackhole;
 
 SawOsc s => JCRev j => Gain gg => dac;
 
-6260 => s.freq;
+2260 => s.freq;
 
 function void in()
 {
