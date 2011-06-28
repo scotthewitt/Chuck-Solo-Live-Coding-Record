@@ -1,7 +1,7 @@
 SawOsc n => Gain g => dac;
 g => JCRev j => dac;
 
-2860 => n.freq;
+3960 => n.freq;
 
 function void gater()
 {
@@ -21,5 +21,5 @@ while(1)
 0.7 => n.gain => j.gain;
 80::ms => now;
 0.0 => n.gain => j.gain;
-2600::ms => now;
+3200::ms => now;
 }
