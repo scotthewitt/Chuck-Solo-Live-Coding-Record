@@ -1,4 +1,4 @@
-Noise n => Gain g => dac;
+SawOsc n => Gain g => dac;
 g => JCRev j => dac;
 
 function void gater()
