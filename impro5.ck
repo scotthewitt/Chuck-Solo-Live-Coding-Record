@@ -1,12 +1,12 @@
 adc => Delay d => Gain su =>  Gain g => blackhole; 
 
+d => Dealy dd => su;
+
+dd => Delay ddd => su;
+
 500::ms => d.max => dd.max => ddd.max;
 
 300::ms => d.delay => dd.delay => ddd.delay;
-
-d => Delay dd => su;
-
-dd => Delay ddd => su;
 
 SawOsc s => JCRev j => Gain gg => dac;
 
