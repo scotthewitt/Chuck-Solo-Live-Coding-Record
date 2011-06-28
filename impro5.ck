@@ -1,6 +1,6 @@
 adc => Delay d => Gain su =>  Gain g => blackhole; 
 
-d => Dealy dd => su;
+d => Delay dd => su;
 
 dd => Delay ddd => su;
 
