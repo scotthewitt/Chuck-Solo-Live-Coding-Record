@@ -1,4 +1,6 @@
 Noise n => dac;
+n => JCRev j => dac;
+
 
 while(1)
 {
