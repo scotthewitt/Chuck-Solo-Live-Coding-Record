@@ -19,7 +19,7 @@ function void re()
 while(1)
 {
 g.last() => gg.gain;
-10::ms => now;
+10::samp => now;
 }
 }
 
