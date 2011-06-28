@@ -1,0 +1,34 @@
+adc => Delay d =>  Gain g => blackhole; 
+
+500::ms => d.max;
+
+300::ms => d.delay;
+
+SawOsc s => JCRev j => Gain gg => dac;
+
+6260 => s.freq;
+
+function void in()
+{
+while(1)
+{
+0.9 => g.gain;
+100::ms => now;
+0.0 => g.gain;
+250::ms => now;
+}
+}
+//spork ~ in();
+
+function void re()
+{
+while(1)
+{
+g.last() * 0.6 => gg.gain;
+1::samp => now;
+}
+}
+
+spork ~ re();
+
+1::day => now;
