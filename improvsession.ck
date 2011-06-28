@@ -16,8 +16,8 @@ spork ~ gater();
 
 while(1)
 {
-0.0 => n.gain;
+0.0 => n.gain => j.gain;
 80::ms => now;
-0.7 => n.gain;
+0.7 => n.gain => j.gain;
 1900::ms => now;
 }
