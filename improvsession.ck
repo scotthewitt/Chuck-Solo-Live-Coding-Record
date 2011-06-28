@@ -19,5 +19,5 @@ while(1)
 0.0 => n.gain;
 80::ms => now;
 0.7 => n.gain;
-900::ms => now;
+1900::ms => now;
 }
