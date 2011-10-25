@@ -9,7 +9,7 @@ while(1)
 {
  0.0 => g.gain;
 25::ms => now;
-0.9 => g.gain;
+0.4 => g.gain;
 25::ms => now;
 }
 }
