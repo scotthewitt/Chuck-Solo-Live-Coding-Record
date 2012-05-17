@@ -10,14 +10,14 @@ j => Gain g => Delay dd => d;
 
 5000::ms => d.max => dd.max;
 
-2000::ms => d.delay;
+600::ms => d.delay;
 
-1000::ms => dd.delay; 
+790::ms => dd.delay; 
 
 0.2 => n.gain;
 0.7 => j.gain;
 
-for (0 => int a; a < 10; a++)
+for (0 => int a; a < 5; a++)
 {
 1000::ms => e.duration;
 0.9 => e.target;
