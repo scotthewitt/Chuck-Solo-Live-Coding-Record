@@ -15,12 +15,12 @@ j => Gain g => Delay dd => d;
 0.8 => n.gain;
 0.5 => j.gain;
 
-300::ms => e.duration;
+100::ms => e.duration;
 0.9 => e.target;
 1 => e.keyOn;
-300::ms => now;
+130::ms => now;
 0.0 => e.target;
 0 => e.keyOn;
-300::ms => now;
+100::ms => now;
 
 11000::ms => now;
