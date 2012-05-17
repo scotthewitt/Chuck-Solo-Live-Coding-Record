@@ -1,6 +1,6 @@
 Noise n => Envelope e => dac;
 
-0.5 => n.gain;
+0.8 => n.gain;
 
 300::ms => e.duration;
 0.9 => e.target;
