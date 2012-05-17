@@ -14,7 +14,7 @@ j => Gain g => Delay dd => d;
 
 790::ms => dd.delay; 
 
-0.2 => n.gain;
+0.4 => n.gain;
 0.7 => j.gain;
 
 for (0 => int a; a < 5; a++)
