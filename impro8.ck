@@ -29,4 +29,4 @@ for (0 => int a; a < 1; a++)
 a * 100::ms => now;
 }
 
-5000::ms => now;
+10000::ms => now;
