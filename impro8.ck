@@ -1,4 +1,4 @@
-TriOsc n => Envelope e => dac;
+SawOsc n => Envelope e => dac;
 
 e => Delay d => JCRev j => dac;
 
@@ -6,7 +6,7 @@ j => Gain g => Delay dd => d;
 
 0.5 => g.gain;
 
-340 => n.freq;
+180 => n.freq;
 
 5000::ms => d.max => dd.max;
 
