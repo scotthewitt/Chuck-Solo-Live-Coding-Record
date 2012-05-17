@@ -6,7 +6,7 @@ e => Delay d => JCRev j => dac;
 
 2000::ms => d.delay; 
 
-0.1 => n.gain;
+0.5 => n.gain;
 0.5 => j.gain;
 
 300::ms => e.duration;
