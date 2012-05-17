@@ -1,10 +1,12 @@
-Noise n => Envelope e => dac;
+TriOsc n => Envelope e => dac;
 
 e => Delay d => JCRev j => dac;
 
 j => Gain g => Delay dd => d;
 
 0.1 => g.gain;
+
+140 => n.freq;
 
 5000::ms => d.max => dd.max;
 
