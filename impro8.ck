@@ -4,7 +4,7 @@ e => Delay d => JCRev j => dac;
 
 j => Gain g => Delay dd => d;
 
-0.1 => g.gain;
+0.01 => g.gain;
 
 340 => n.freq;
 
@@ -12,10 +12,10 @@ j => Gain g => Delay dd => d;
 
 2000::ms => d.delay;
 
-3000::ms => dd.delay; 
+1000::ms => dd.delay; 
 
 0.8 => n.gain;
-0.5 => j.gain;
+0.7 => j.gain;
 
 for (0 => int a; a < 10; a++)
 {
