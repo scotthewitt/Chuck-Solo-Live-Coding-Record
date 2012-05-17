@@ -19,12 +19,12 @@ j => Gain g => Delay dd => d;
 
 for (0 => int a; a < 5; a++)
 {
-1000::ms => e.duration;
+100::ms => e.duration;
 0.9 => e.target;
 1 => e.keyOn;
-1000::ms => now;
+100::ms => now;
 0.0 => e.target;
 0 => e.keyOn;
-1000::ms => now;
+100::ms => now;
 a * 100::ms => now;
 }
