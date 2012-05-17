@@ -26,5 +26,5 @@ for (0 => int a; a < 10; a++)
 0.0 => e.target;
 0 => e.keyOn;
 100::ms => now;
-(500 / a) * 1::ms => now;
+a * 100::ms => now;
 }
